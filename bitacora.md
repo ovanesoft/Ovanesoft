@@ -150,6 +150,28 @@ Ovanesoft/
   
   - **Resultado:** Sección hero más limpia y minimalista, enfocada en el contenido textual y el elemento visual
 
+### [2025-01-27] - Corrección del Menú Móvil y Centrado de Tarjetas de Servicios
+- **Acción:** Solucionado problema del menú hamburguesa y centrado de elementos en tarjetas de servicios
+- **Motivo:** Usuario reportó que el menú desplegable no funcionaba y solicitó centrar iconos y texto de las tarjetas
+- **Detalles:**
+  - **Menú Hamburguesa Corregido:**
+    - Agregado `preventDefault()` y `stopPropagation()` para evitar conflictos
+    - Implementadas verificaciones de null para prevenir errores JavaScript
+    - Mejorado el manejo de eventos de clic
+    - Agregado listener para prevenir cierre del menú al hacer clic dentro
+  
+  - **Tarjetas de Servicios Centradas:**
+    - Agregado `text-align: center` a la clase `.feature-card`
+    - Centrados todos los elementos: iconos, títulos y descripciones
+    - Aplicado a todas las tarjetas: Aplicaciones Web, Apps Móviles, Integración con IA, Sistemas Complejos, Sistemas QR, Cloud & Hosting
+  
+  - **Mejoras en UX Móvil:**
+    - Menú hamburguesa completamente funcional
+    - Interacciones más estables en dispositivos móviles
+    - Diseño más equilibrado y profesional en las tarjetas de servicios
+  
+  - **Resultado:** Navegación móvil funcional y diseño de servicios más profesional y centrado
+
 ## Reglas de Trabajo
 1. **Siempre leer este archivo** antes de realizar cualquier trabajo
 2. **Actualizar este archivo** inmediatamente después de cada cambio
