@@ -84,21 +84,18 @@
             color: var(--primary);
         }
 
-        /* Mobile Menu - Simplified */
+        /* Mobile Menu */
         .mobile-menu-toggle {
             display: none;
             flex-direction: column;
             cursor: pointer;
-            padding: 10px;
-            background: rgba(99, 102, 241, 0.1);
-            border-radius: 5px;
-            border: 1px solid var(--primary);
+            padding: 0.5rem;
         }
 
         .hamburger {
             width: 25px;
             height: 3px;
-            background: var(--primary);
+            background: var(--text);
             margin: 3px 0;
             transition: 0.3s;
             border-radius: 2px;
@@ -110,10 +107,10 @@
             top: 100%;
             left: 0;
             right: 0;
-            background: var(--dark);
-            border: 1px solid var(--primary);
-            padding: 20px;
-            z-index: 1000;
+            background: rgba(15, 23, 42, 0.98);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(99, 102, 241, 0.2);
+            padding: 1rem 0;
         }
 
         .mobile-menu.active {
@@ -122,20 +119,36 @@
 
         .mobile-menu .nav-links {
             flex-direction: column;
-            gap: 15px;
+            gap: 1rem;
+            padding: 0 2rem;
         }
 
         .mobile-menu .nav-links a {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(99, 102, 241, 0.1);
             color: var(--text);
-            font-size: 16px;
             font-weight: 500;
+            font-size: 1rem;
+            display: block;
             text-decoration: none;
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+            transition: color 0.3s ease;
         }
 
         .mobile-menu .nav-links a:hover {
             color: var(--primary);
+        }
+
+        /* Hamburger animation */
+        .mobile-menu-toggle.active .hamburger:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .mobile-menu-toggle.active .hamburger:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle.active .hamburger:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
         }
 
         /* Hero Section */
@@ -441,14 +454,16 @@
             75% { transform: translateY(-15px) rotate(270deg); }
         }
 
-        /* Responsive - Simple */
+        /* Responsive */
         @media (max-width: 768px) {
             .nav-container .nav-links {
                 display: none;
             }
             
             .mobile-menu-toggle {
-                display: flex;
+                display: flex !important;
+                visibility: visible !important;
+                opacity: 1 !important;
             }
         }
 
