@@ -50,6 +50,33 @@ Ovanesoft/
     - Móviles (≤480px): `height: 28px, max-width: 120px`
   - Transiciones suaves para todos los cambios de estado
 
+### [2025-01-27] - Configuración y Subida a GitHub
+- **Acción:** Configurado repositorio Git y subido todo el proyecto a GitHub
+- **Motivo:** Usuario solicitó subir el proyecto completo a GitHub
+- **Detalles:**
+  - Inicializado repositorio Git local (`git init`)
+  - Creado archivo `.gitignore` con exclusiones apropiadas
+  - Commit inicial con todos los archivos del proyecto
+  - Configurado repositorio remoto: `https://github.com/ovanesoft/Ovanesoft.git`
+  - Resuelto merge conflict con README.md remoto
+  - Subido exitosamente a GitHub (12 objetos, 47.93 KiB)
+  - Repositorio disponible en: [https://github.com/ovanesoft/Ovanesoft](https://github.com/ovanesoft/Ovanesoft)
+
+### [2025-01-27] - Configuración de Dominio Personalizado y GitHub Pages
+- **Acción:** Configurado GitHub Pages con dominio personalizado ovanesoft.com
+- **Motivo:** Usuario solicitó enlazar su dominio ovanesoft.com al repositorio para tener la página online
+- **Detalles:**
+  - Creado archivo `CNAME` con el dominio ovanesoft.com
+  - Configurado GitHub Pages desde la rama main
+  - Configurado DNS en GoDaddy con 4 registros A apuntando a GitHub Pages:
+    - 185.199.108.153
+    - 185.199.109.153
+    - 185.199.110.153
+    - 185.199.111.153
+  - Configurado CNAME para www apuntando a ovanesoft.com
+  - Sitio web completamente funcional y accesible en: **https://ovanesoft.com**
+  - HTTPS habilitado automáticamente por GitHub Pages
+
 ## Reglas de Trabajo
 1. **Siempre leer este archivo** antes de realizar cualquier trabajo
 2. **Actualizar este archivo** inmediatamente después de cada cambio
