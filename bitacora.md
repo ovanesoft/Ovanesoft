@@ -130,6 +130,26 @@ Ovanesoft/
   
   - **Resultado:** Separación visual clara entre botones y elemento flotante en todos los dispositivos móviles
 
+### [2025-01-27] - Eliminación de Botones CTA de la Sección Hero
+- **Acción:** Removidos completamente los botones "Iniciar Proyecto" y "Ver Servicios" de la sección hero
+- **Motivo:** Usuario indicó que no le gustaba cómo estaban quedando los botones
+- **Detalles:**
+  - **HTML eliminado:**
+    - Div contenedor `.cta-buttons` con los dos botones CTA
+    - Enlaces "Iniciar Proyecto" y "Ver Servicios"
+  
+  - **CSS limpiado:**
+    - Estilos de `.btn-primary` y `.btn-secondary` eliminados
+    - Estilos de `.cta-buttons` eliminados
+    - Referencias a botones en todas las media queries responsive eliminadas
+  
+  - **Espaciado ajustado:**
+    - Margin-bottom del párrafo hero eliminado (cambio de 2rem a 0)
+    - Espaciado optimizado para diseño más limpio
+    - Mantenida la separación apropiada entre texto y elemento visual AI bot
+  
+  - **Resultado:** Sección hero más limpia y minimalista, enfocada en el contenido textual y el elemento visual
+
 ## Reglas de Trabajo
 1. **Siempre leer este archivo** antes de realizar cualquier trabajo
 2. **Actualizar este archivo** inmediatamente después de cada cambio
