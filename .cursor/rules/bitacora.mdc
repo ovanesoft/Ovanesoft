@@ -1,0 +1,5 @@
+---
+description: siempre, siempre, absolutamente siempre, leer el archivo bitacora.md, si no existe bitacora.md, crealo en la raiz de este proyecto y desde allí leerlo siempre. luego de efectuar cualquier cambio dejar registro del cambio para que pueda ser accesible desde cualquier chat, esta bitacora.md es la absoluta verdad del proyecto por lo cual la vas a leer siempre y la vas a actualizar con información veridica de todos los cambios que hagas siempre en el momento o inmeditamente después de realizado
+globs:
+alwaysApply: true
+---
