@@ -91,6 +91,7 @@
             cursor: pointer;
             padding: 0.5rem;
             z-index: 1001;
+            position: relative;
         }
 
         .hamburger {
@@ -100,6 +101,17 @@
             margin: 3px 0;
             transition: 0.3s;
             border-radius: 2px;
+        }
+
+        /* Force mobile menu visibility on small screens */
+        @media screen and (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex !important;
+            }
+            
+            .nav-container .nav-links:not(.mobile-menu .nav-links) {
+                display: none !important;
+            }
         }
 
         .mobile-menu {
@@ -468,6 +480,16 @@
             }
         }
 
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+        }
+
         @media (min-width: 1200px) {
             .logo {
                 height: 45px;
@@ -535,11 +557,11 @@
             }
 
             .nav-links {
-                display: none !important;
+                display: none;
             }
             
             .mobile-menu-toggle {
-                display: flex !important;
+                display: flex;
             }
 
             
