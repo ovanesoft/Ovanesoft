@@ -111,6 +111,8 @@
             backdrop-filter: blur(10px);
             border-top: 1px solid rgba(99, 102, 241, 0.2);
             padding: 1rem 0;
+            z-index: 999;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
 
         .mobile-menu.active {
@@ -124,8 +126,18 @@
         }
 
         .mobile-menu .nav-links a {
-            padding: 0.5rem 0;
+            padding: 0.8rem 0;
             border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+            color: var(--text);
+            font-weight: 500;
+            font-size: 1rem;
+            display: block;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .mobile-menu .nav-links a:hover {
+            color: var(--primary);
         }
 
         /* Hamburger animation */
