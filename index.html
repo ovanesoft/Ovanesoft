@@ -90,6 +90,7 @@
             flex-direction: column;
             cursor: pointer;
             padding: 0.5rem;
+            z-index: 1001;
         }
 
         .hamburger {
@@ -457,6 +458,16 @@
         }
 
         /* Responsive */
+        @media (max-width: 1024px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+        }
+
         @media (min-width: 1200px) {
             .logo {
                 height: 45px;
@@ -524,11 +535,11 @@
             }
 
             .nav-links {
-                display: none;
+                display: none !important;
             }
             
             .mobile-menu-toggle {
-                display: flex;
+                display: flex !important;
             }
 
             

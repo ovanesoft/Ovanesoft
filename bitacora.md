@@ -188,6 +188,25 @@ Ovanesoft/
   
   - **Resultado:** Diseño completamente centrado y profesional en todas las tarjetas de servicios
 
+### [2025-01-27] - Corrección de Visibilidad del Menú Móvil Hamburguesa
+- **Acción:** Solucionado problema de visibilidad de los enlaces del menú móvil hamburguesa
+- **Motivo:** Usuario reportó que en el menú sandwich del celular no se ven los enlaces: Inicio, Servicios, Tecnologías, Contacto
+- **Detalles:**
+  - **Estilos de Enlaces Mejorados:**
+    - Agregado `color: var(--text)` para visibilidad clara
+    - Establecido `font-weight: 500` y `font-size: 1rem`
+    - Aumentado padding a `0.8rem` para mejores objetivos táctiles
+    - Agregado `display: block` y `text-decoration: none`
+    - Implementado efecto hover con `color: var(--primary)`
+  
+  - **Mejoras en el Menú Móvil:**
+    - Agregado `z-index: 999` para asegurar que aparezca sobre otros elementos
+    - Añadido `box-shadow` para mejor separación visual
+    - Mejorado contraste y legibilidad de los enlaces
+    - Optimizado para dispositivos táctiles
+  
+  - **Resultado:** Menú móvil completamente funcional con enlaces claramente visibles y accesibles
+
 ## Reglas de Trabajo
 1. **Siempre leer este archivo** antes de realizar cualquier trabajo
 2. **Actualizar este archivo** inmediatamente después de cada cambio
