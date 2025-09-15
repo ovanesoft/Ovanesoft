@@ -110,6 +110,26 @@ Ovanesoft/
   
   - **Resultado:** Sitio completamente responsive y optimizado para todos los dispositivos
 
+### [2025-01-27] - Corrección de Espaciado entre Botones y Círculo Flotante
+- **Acción:** Solucionado problema de espaciado entre botones CTA y elemento visual AI bot
+- **Motivo:** Usuario reportó que los botones "Iniciar Proyecto" y "Ver Servicios" estaban muy encimados con el círculo flotante
+- **Detalles:**
+  - **Espaciado mejorado en tablets (≤768px):**
+    - Gap del hero-container aumentado de 3rem a 4rem
+    - Margin-bottom de 2rem agregado a los botones CTA
+    - Margin-top de 2rem agregado al círculo AI bot
+  
+  - **Espaciado mejorado en móviles (≤480px):**
+    - Gap del hero-container aumentado de 2rem a 3rem
+    - Margin-bottom de 2.5rem agregado a los botones CTA
+    - Margin-top de 2.5rem agregado al círculo AI bot
+  
+  - **Espaciado mejorado en móviles pequeños (≤360px):**
+    - Margin-top de 2rem agregado al círculo AI bot
+    - Mantenida la separación visual apropiada
+  
+  - **Resultado:** Separación visual clara entre botones y elemento flotante en todos los dispositivos móviles
+
 ## Reglas de Trabajo
 1. **Siempre leer este archivo** antes de realizar cualquier trabajo
 2. **Actualizar este archivo** inmediatamente después de cada cambio
