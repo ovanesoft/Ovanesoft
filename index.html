@@ -353,9 +353,13 @@
 
         .tech-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            place-items: center;
         }
 
         .tech-item {
@@ -369,7 +373,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 180px;
+            height: 200px;
+            width: 100%;
         }
 
         .tech-item:hover {
@@ -382,12 +387,20 @@
             line-height: 1.4;
             margin: 0.5rem 0;
             word-break: break-word;
+            min-height: 2.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .tech-item p {
             font-size: 0.85rem;
             line-height: 1.4;
             color: var(--text-muted);
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .tech-item .tech-logo {
@@ -439,6 +452,35 @@
             outline: none;
             border-color: var(--primary);
             box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-button:active {
+            transform: scale(0.95);
         }
 
         /* Footer */
@@ -997,6 +1039,11 @@
             </form>
         </div>
     </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5491138961652?text=Hola%2C%20quiero%20hacer%20una%20consulta%20sobre%20sus%20servicios%20de%20software" target="_blank" class="whatsapp-button" title="Contactarnos por WhatsApp">
+        💬
+    </a>
 
     <!-- Footer -->
     <footer class="footer">
