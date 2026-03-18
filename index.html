@@ -289,6 +289,82 @@
         .floating-element:nth-child(3) { bottom: 30%; left: 20%; animation-delay: 4s; }
         .floating-element:nth-child(4) { top: 40%; right: 30%; animation-delay: 6s; }
 
+        /* BringCar Spotlight Section */
+        .bringcar-spotlight {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.1) 50%, rgba(6, 182, 212, 0.1) 100%);
+            border-top: 1px solid rgba(99, 102, 241, 0.2);
+            border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .bringcar-spotlight .spotlight-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .bringcar-spotlight .badge {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .bringcar-spotlight h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .bringcar-spotlight h2 .highlight {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .bringcar-spotlight .by-line {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .bringcar-spotlight .by-line a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .bringcar-spotlight .by-line a:hover {
+            text-decoration: underline;
+        }
+
+        .bringcar-spotlight .description {
+            font-size: 1.1rem;
+            color: var(--text);
+            line-height: 1.75;
+            margin-bottom: 1.5rem;
+        }
+
+        .bringcar-spotlight .dashboards-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1rem;
+            margin-top: 1rem;
+        }
+
+        .bringcar-spotlight .dashboards-list span {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 8px;
+            padding: 0.35rem 0.75rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
         /* Features Section */
         .features {
             padding: 5rem 0;
@@ -923,6 +999,30 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BringCar Spotlight -->
+    <section class="bringcar-spotlight" id="bringcar">
+        <div class="spotlight-inner">
+            <span class="badge">Nuevo proyecto</span>
+            <h2><span class="highlight">BringCar</span> — Concesionarias de automotores</h2>
+            <p class="by-line">De <a href="https://removersoft.com" target="_blank" rel="noopener noreferrer">removersoft.com</a>, dedicado al sector automotriz</p>
+            <p class="description">
+                Sistema SaaS multi-tenant y multiplataforma con IA en el alma del sistema. Gestioná todo desde un mismo lugar: proceso de ventas, finanzas, proveedores y clientes. Un único dashboard centralizado potenciado por inteligencia artificial.
+            </p>
+            <p class="description">
+                Dashboards específicos para cada rol: <strong>clientes</strong>, <strong>proveedores</strong>, <strong>talleres</strong>, <strong>ventas</strong> y <strong>administración</strong>. Todo centralizado y gobernado por IA para concesionarias que buscan un control total.
+            </p>
+            <div class="dashboards-list">
+                <span>Ventas</span>
+                <span>Finanzas</span>
+                <span>Proveedores</span>
+                <span>Clientes</span>
+                <span>Talleres</span>
+                <span>Administración</span>
+                <span>IA centralizada</span>
             </div>
         </div>
     </section>
